@@ -13,6 +13,7 @@
     $formcontent="From: $name \n Phone: $phone \n\n Message: $message";
 
     mail($recipient, $subject, $formcontent, $header) or die("Error!");
+    header("Location: index.php?mailsend");
     echo "Thank You!" . "-" . "<a href='form.html' style='text-decoration:none;color:#ff0099;'>Return Home</a>";
 
   }
