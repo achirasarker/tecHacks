@@ -1,25 +1,30 @@
+/* body{
+   color: white;
+ } */
 
 /* Button Styles */
 .myButton {
- box-shadow: -3px 4px 2px 1px #1564ad;
+ /* box-shadow: -3px 4px 2px 1px #1564ad; */
  background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
  background-color:#79bbff;
+ background-color: white;
  border-radius:12px;
  border:1px solid #337bc4;
  display:inline-block;
  cursor:pointer;
  color:#ffffff;
- font-family:Arial;
- font-size:19px;
+ /* font-family:Arial; */
+ font-family: 'Saira Condensed', sans-serif;
+ font-size:25px;
  font-weight:bold;
  padding:13px 38px;
  text-decoration:none;
- text-shadow:-2px 4px 0 #528ecc;
-  margin-left: 400px;
+ /* text-shadow:-2px 4px 0 #528ecc; */
+  margin-left: 38%;
 }
 .myButton:hover {
- background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
- background-color:#f0849f;
+ /* background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%); */
+ background:linear-gradient(to bottom, white 5%, #f0849f 100%);
 }
 .myButton:active {
  position:relative;
@@ -30,10 +35,6 @@ a:hover{
   text-decoration: none;
 }
 
-a .myButton {
-  margin-top: 200px;
-}
-
 .center{
   margin-left: auto;
   margin-right: auto;
@@ -41,76 +42,152 @@ a .myButton {
 
 /*Intro Section Styles*/
 .intro{
-  /*background-color: #e8e6e6;*/
-  padding: 80px 70px 10px;
+  background-color: #e8e6e6;
+  /* background-color: #192a88; */
+  padding: 6% 8% 4%;
   overflow: auto;
   align-items: center;
 }
 
 .girlImage{
-  width: 40%;
+  padding-right: 20%;
   float: right;
-  margin-left: 30px;
+  margin-left: 5%;
 }
 
-.title{
-  margin-left: 200px;
+.topTitle{
+  margin-left: 31%;
+  font-family: 'Orbitron', sans-serif;
 }
 
-.duedate{
-  padding-left: 200px;
+.bottomTitle {
+  margin-left: 25%;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .date
 {
-  padding-left: 200px;
-  padding-top: 30px;
+  padding-top: 3%;
+  padding-left: 35%;
+  font-family: 'Saira Condensed', sans-serif;
+  font-size: 2rem;
 }
 
 /*Description Section Styles*/
 .descrip{
-  padding: 10px 40px 20px;
+  padding: 4% 5% 8%;
   align-items: center;
+  font-family: 'Lora', serif;
 }
 
 .fellowIntro{
-  margin-left: 250px;
-  /* width: 30%; */
-  margin-top: 20px;
+  margin-left: 40%;
+  margin-top: 5%;
+  margin-bottom: 3%;
 }
 
 .fellow {
-  margin-left: 300px;
-  margin-top: 20px;
-}
-
-li{
-  margin-left: 40px;
+  margin-left: 43%;
+  margin-top: 1%;
 }
 
 .laptop{
   float: left;
-  margin-left: 350px;
-  margin-bottom: 50px;
+  margin-left: 15%;
+  margin-bottom: 3%;
+  margin-top: 3%;
 }
 
 /*Table Styles*/
-/* .tableSec{
-  background-color: #e8e6e6;
-} */
+.tableSec{
+  padding-bottom: 4%;
+  font-family: 'Lora', serif;
+}
 
 .table{
-  padding: 10px 40px 10px;
+  padding: 2% 10% 10%;
+  color: white;
 }
 td {
-  padding: 15px;
+  /* padding: 15px; */
+  /* padding: 15%; */
   text-align: center;
+  width: 200px;
+}
+
+.table td {
+  padding: 3rem;
 }
 
 
 /* Contact Form */
 .contact{
-  margin-left: 400px;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  background-color: #e8e6e6;
+  /* background-color: #192a88; */
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: 'Lora', serif;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px rgba(254,236,164,1);
 }
+
+.contactTitle{
+  margin-left: 38%;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #332902;
+  /* color: white; */
+}
+
+input {
+  margin-left: 35%;
+  /* width: 360px; or 25% */
+  margin-bottom: 1%;
+  padding: 0.5% 0.5%;
+}
+
+input:hover {
+  background-color: #e6e6ee;
+}
+
+textarea:hover {
+  background-color: #e6e6ee;
+}
+
+textarea {
+  padding: 0.5% 0.5%;
+}
+
+.submit {
+  border: 0;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #fe8b8e;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.submit:hover{
+  background: black;
+  /* padding: 12px; */
+  letter-spacing: 8px;
+}
+
+#error_message {
+  margin-bottom: 20px;
+  margin-left: 35%;
+  width: 25%;
+  background: #fe8b8e;
+  padding: 0;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
