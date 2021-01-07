@@ -16,6 +16,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <!-- favicon -->
     <link rel="icon" href="images/favicon.ico">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- jquery scripts -->
     <script src="https://kit.fontawesome.com/bc00f788c2.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -25,37 +27,59 @@
 
   </head>
 
-  <style>
+  <!-- <style>
   body {
   background-image: url('images/backgroundOther.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
   }
+  </style> -->
+
+  <style>
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  #content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: -50px;
+  }
   </style>
 
   <body>
 
-    <section class="intro">
-      <h1 class="center topTitle">THE TECHACKS</h1>
-      <h1 class="center bottomTitle">FELLOWSHIP PROGRAM</h1>
-      <h4 class="date">Dec 14, 2020 - Mar 8, 2021</h4>
-      <img src="images/girl.png" alt="" class="girlImage">
+    <section class="beigeBackground">
+      <div class="intro">
+        <h1 class="center topTitle">THE TECHACKS</h1>
+        <h1 class="center bottomTitle">FELLOWSHIP PROGRAM</h1>
+        <h4 class="date">Dec 14, 2020 - Mar 8, 2021</h4>
+      </div>
+      <div class="center">
+        <img src="images/girl.png" class="girlImage center">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCfEx-3E52rnBeBtd8LFNizD_pp5EPt50-b33GnJS5IXN1hg/viewform" class="myButton">APPLY HERE!</a>
+      </div>
       <br>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCfEx-3E52rnBeBtd8LFNizD_pp5EPt50-b33GnJS5IXN1hg/viewform" class="myButton" style="margin-bottom: 15px; margin-top: 8%;">APPLY HERE!</a>
     </section>
 
 
-    <section class="descrip center">
-      <img src="images/laptop.png" alt="" class="laptop">
+    <section class="descrip centerTable">
       <h2 class="fellowIntro">What is the TecHacks Fellowship Program?</h2>
-      <li class="fellow">Work with mentors to create a fully-developed computer science project</li>
-      <li class="fellow">Receive a budget of $100 to use at your discretion to enhance your project</li>
-      <li class="fellow">Pitch your final product to win the chance of a TecHacks sponsorship</li>
+      <img src="images/laptop.png" alt="" class="laptop">
+      <div class="" style="padding-top: 3%;">
+        <li class="fellow" >- Work with mentors to create a fully-developed computer science project</li>
+        <li class="fellow" >- Receive a budget of $100 to use at your discretion to enhance your project</li>
+        <li class="fellow" >- Pitch your final product to win the chance of a TecHacks sponsorship</li>
+      </div>
     </section>
 
     <section class="tableSec">
-      <table style="width:80%" class="table center">
+      <table style="width:80%" class="table centerTable">
 
         <tr style="background-color: #2d90ee">
           <td>01</td>
@@ -101,29 +125,31 @@
     </section>
 
 
-    <section class="contact">
+    <section class="contact beigeBackground">
       <h1 class="contactTitle">Contact Us!</h1>
-
-      <form action="contactForm.php" method="post" onsubmit="return validate();">
-      <div id="error_message"></div>
-      <input type="text" name="name" id="name" placeholder="Full Name" style="width: 25%;">
-      <br>
-      <input type="email" name="email" id="email" placeholder="Email" style="width: 25%;">
-      <br>
-      <input type="phone" name="phone" id="phone" placeholder="Phone" style="width: 25%;">
-      <br>
-      <input type="text" name="subject" id="subject" placeholder="Subject" style="width: 25%;">
-      <br>
-      <textarea name="message" id="message" rows="8" cols="41" placeholder="Type Your Message Here" style="margin-left: 35%;"></textarea>
-      <br>
-      <input type="submit" class="submit" name="submit" style="margin-left: 43%; width: 145px;">
-      </form>
-
-      <h5 style="margin-left: 42%; padding-top: 2%;">© TecHacks 2020</h5>
-      <a class="signup" href="https://dry-river-57493.herokuapp.com/"><button class="btn btn-lg btn-primary" type="submit">Sign Up to Newsletter</button></a>
-
+        <form action="contactForm.php" method="post" onsubmit="return validate();">
+        <div id="error_message"></div>
+        <input type="text" name="name" id="name" placeholder="Full Name" style="width: 25%;" class="centerInput inputMargin">
+        <br>
+        <input type="email" name="email" id="email" placeholder="Email" style="width: 25%;" class="centerInput inputMargin">
+        <br>
+        <input type="phone" name="phone" id="phone" placeholder="Phone" style="width: 25%;" class="centerInput inputMargin">
+        <br>
+        <input type="text" name="subject" id="subject" placeholder="Subject" style="width: 25%;" class="centerInput inputMargin">
+        <br>
+        <textarea name="message" id="message" rows="8" placeholder="Type Your Message Here" style="width:25%;" class="centerInput inputMargin"></textarea>
+        <br>
+        <input type="submit" class="submit" name="submit" style="margin-left: 45%; width: 145px;">
+        </form>
     </section>
+
+    <footer class="center">
+      <h5 style="padding-top: 1%;">© TecHacks 2020</h5>
+      <a class="signup" href="https://techacks-signup.herokuapp.com/" style="margin:0;"><button class="btn btn-lg btn-primary centerButton" type="submit">Sign Up To Our Newsletter →</button></a>
+      <a href="https://www.instagram.com/techacks_/?hl=en" class="fa fa-instagram center fa-2x" style="padding-left:0;"></a>
+      <a href="https://www.facebook.com/techackshackathon/" class="fa fa-facebook center fa-2x"></a>
+      <a href="https://www.linkedin.com/company/techacks2/" class="fa fa-linkedin center fa-2x"></a>
+    </footer>
 
   </body>
 </html>
-
