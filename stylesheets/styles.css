@@ -218,6 +218,19 @@ textarea {
   font-size: 14px;
   transition: all 0.5s ease;
 }
+.inputMargin {
+  margin-bottom: 0;
+  border: solid grey 1px;
+}
+
+/* Footer section */
+footer {
+  font-family: 'Lora', serif;
+  padding-top: 3%;
+  padding-bottom: 4%;
+  background-color: #0c2f99;
+  color: #cccccc;
+}
 .signup {
   color: #192a88;
   margin-left: 41.5%;
@@ -229,24 +242,16 @@ textarea {
   color: black;
 }
 .btn-primary {
-  background-color: peachpuff;
+  background-color: #ed7cf3;
   border: none;
   color: black;
 }
 .btn-primary:hover {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
-.inputMargin {
-  margin-bottom: 0;
-  border: solid grey 1px;
-}
-
-/* Footer section */
-footer {
-  font-family: 'Lora', serif;
-  padding-top: 3%;
-  padding-bottom: 3%;
+.btn-large {
+  padding-top: 1%;
 }
 .fa {
   padding: 20px;
@@ -255,8 +260,8 @@ footer {
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  color: #fe8b8e;
+  color: #cccccc;
 }
 .fa:hover {
-  opacity: 0.7;
+  color: white;
 }
